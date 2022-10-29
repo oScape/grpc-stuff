@@ -1,0 +1,12 @@
+syntax = "proto3";
+package route;
+
+import "google/protobuf/empty.proto";
+
+service Route {
+	rpc GetMessage(google.protobuf.Empty) returns (Message) {}
+}
+
+message Message {
+	string message = 1;
+}
