@@ -1,5 +1,0 @@
-/target
-Cargo.lock
-.vscode
-**/proto_interface/*
-!**/proto_interface/.gitkeep

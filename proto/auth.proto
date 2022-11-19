@@ -1,0 +1,20 @@
+syntax = "proto3";
+package auth;
+
+service Auth {
+  rpc CreateUser(Lastname) returns (User) {}
+  rpc GetUser(UserId) returns (User) {}
+}
+
+message Lastname {
+  string lastname = 1;
+}
+
+message UserId {
+  bytes id = 1;
+}
+
+message User {
+  bytes id = 1;
+  string lastname = 2;
+}
