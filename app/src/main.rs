@@ -1,4 +1,7 @@
+mod components;
+
 use yew::{html, Html, Component, Context};
+use crate::components::List;
 
 struct Main {}
 
@@ -12,7 +15,7 @@ impl Component for Main {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <div>{ "hello, world!" }</div>
+            <div><List /></div>
         }
     }
 }
